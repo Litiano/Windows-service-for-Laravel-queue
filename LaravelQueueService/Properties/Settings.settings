@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LaravelQueueService.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="service_name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">{{service_name}}</Value>
+    </Setting>
+    <Setting Name="service_display_name" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">{{service_display_name}}</Value>
+    </Setting>
+    <Setting Name="service_start_type" Type="System.ServiceProcess.ServiceStartMode" Scope="Application">
+      <Value Profile="(Default)">Automatic</Value>
+    </Setting>
+    <Setting Name="php_path" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">{{php_path}}</Value>
+    </Setting>
+    <Setting Name="laravel_base_path" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">{{laravel_base_path}}</Value>
+    </Setting>
+    <Setting Name="service_description" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">{{service_description}}</Value>
+    </Setting>
+    <Setting Name="queue_connection" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">{{queue_connection}}</Value>
+    </Setting>
+    <Setting Name="queue_work_arguments" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">{{queue_work_arguments}}</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
