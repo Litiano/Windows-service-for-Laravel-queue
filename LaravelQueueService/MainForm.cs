@@ -55,7 +55,7 @@ namespace LaravelQueueService
             installButton.Enabled = !IsInstalled() && IsAdministrator();
             uninstallButton.Enabled = IsInstalled() && IsAdministrator();
             adminAlert.Visible = !IsAdministrator();
-            comandLabel.Text = $"{config.php_path} {config.laravel_base_path}/artisan queue:work {config.queue_connection} {config.queue_work_arguments}";
+            comandLabel.Text = $"{config.php_path} {config.laravel_base_path}/artisan windows:service:queue:work {config.queue_connection} {config.queue_work_arguments}";
             versionLabel.Text = "Version: " + Assembly.GetExecutingAssembly().GetName().Version.ToString();
         }
 

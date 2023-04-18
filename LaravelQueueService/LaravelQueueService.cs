@@ -54,7 +54,7 @@ namespace LaravelQueueService
 
                 PhpProcess = CreateBackgroungProcess(config.php_path, string.Join(" ", arguments));
                 PhpProcess.Start();
-                Logger.Info($"Running {config.php_path} {arguments}");
+                Logger.Info($"Running {config.php_path} {string.Join(" ", arguments)}");
                 Logger.Info("PHP process started with PID: " + PhpProcess.Id);
                 LogMemoryUsage();
                 StartMemoryVerifyThread();
@@ -88,12 +88,11 @@ namespace LaravelQueueService
                 Logger.Info("Sending command windows:service:queue:restart...");
                 string[] arguments =
                 {
-                    config.php_path,
                     $"{config.laravel_base_path}/artisan",
                     $"windows:service:queue:restart",
                     $"--windowsServiceName={config.service_name}",
                 };
-                Process process = CreateBackgroungProcess(config.php_path, string.Join("", arguments));
+                Process process = CreateBackgroungProcess(config.php_path, string.Join(" ", arguments));
                 process.Start();
                 process.WaitForExit();
                 Logger.Info(process.StandardOutput.ReadToEnd());
