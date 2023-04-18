@@ -125,7 +125,7 @@ namespace LaravelQueueService
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://packagist.org/packages/litiano/windows-service-for-laravel-queue");
+            Process.Start("https://packagist.org/packages/litiano/laravel-queue-for-windows");
         }
 
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
